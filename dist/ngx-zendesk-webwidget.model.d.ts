@@ -1,7 +1,4 @@
-export declare abstract class NgxZendeskWebwidgetConfig {
-    lazyLoad: boolean;
-    timeOut: number;
-    injectionTag: 'head' | 'body' | 'script' | string;
+export declare abstract class ngxZendeskWebwidgetConfig {
     abstract accountUrl: string;
-    abstract callback(zE: any): any;
+    abstract beforePageLoad(zE: any): any;
 }

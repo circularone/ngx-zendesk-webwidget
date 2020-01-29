@@ -1,11 +1,12 @@
-import { NgxZendeskWebwidgetConfig } from './ngx-zendesk-webwidget.model';
-export declare class NgxZendeskWebwidgetService {
-    private ngxZendeskWebwidgetConfig?;
+import { ngxZendeskWebwidgetConfig } from './ngx-zendesk-webwidget.model';
+export declare class ngxZendeskWebwidgetService {
     private window;
-    private initialized;
-    zE: any;
-    constructor(ngxZendeskWebwidgetConfig?: NgxZendeskWebwidgetConfig);
-    initZendesk(config: NgxZendeskWebwidgetConfig): Promise<boolean>;
-    private finishLoading;
-    isInitialized(): boolean;
+    constructor(_ngxZendeskWebwidgetConfig?: ngxZendeskWebwidgetConfig);
+    setLocale(locale: any): void;
+    identify(userObj: any): void;
+    hide(): void;
+    show(): void;
+    activate(options?: any): void;
+    setHelpCenterSuggestions(options: any): void;
+    setSettings(settings: any): void;
 }
