@@ -9,7 +9,7 @@ import { ngxZendeskWebwidgetService } from './ngx-zendesk-webwidget.service';
   ]
 })
 export class ngxZendeskWebwidgetModule {
-  static forRoot(zendeskConfig: Type<ngxZendeskWebwidgetConfig>): ModuleWithProviders {
+  static forRoot(zendeskConfig: Type<ngxZendeskWebwidgetConfig>): ModuleWithProviders<ngxZendeskWebwidgetModule> {
     return {
       ngModule: ngxZendeskWebwidgetModule,
       providers: [
